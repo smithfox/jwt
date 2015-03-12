@@ -45,17 +45,18 @@ var (
 	JWTErrNotFoundUser        = &JWTError{_errid: 7, _errmsg: "用户名或密码错误"}
 	JWTErrNotActivedUser      = &JWTError{_errid: 8, _errmsg: "该用户还未激活"}
 	JWTErrBannedUser          = &JWTError{_errid: 9, _errmsg: "该用户被封"}
-	JWTErrInvalidKey          = &JWTError{_errid: 10, _errmsg: "无效Key"}
-	JWTErrInvalidSign         = &JWTError{_errid: 11, _errmsg: "无效Sign"}
-	JWTErrDecodeSign          = &JWTError{_errid: 12, _errmsg: "解码Sign失败"}
-	JWTErrFailDoSign          = &JWTError{_errid: 13, _errmsg: "Sign失败"}
-	JWTErrIllegalTokenFormat  = &JWTError{_errid: 14, _errmsg: "Illegal Token格式"}
-	JWTErrInvalidTokenHeader  = &JWTError{_errid: 15, _errmsg: "无效Token[0]"}
-	JWTErrNotSupportAlgorithm = &JWTError{_errid: 16, _errmsg: "不支持的加密算法"}
-	JWTErrInvalidGrantType    = &JWTError{_errid: 17, _errmsg: "无效的grant type"}
-	JWTErrMakeCalim           = &JWTError{_errid: 18, _errmsg: "生成Token失败"}
-	JWTErrDecodeCalim         = &JWTError{_errid: 19, _errmsg: "解析Token失败"}
-	JWTErrInvalidCalim        = &JWTError{_errid: 20, _errmsg: "解析Token失败"}
+	JWTErrDeniedUser          = &JWTError{_errid: 10, _errmsg: "该用户禁止登录"}
+	JWTErrInvalidKey          = &JWTError{_errid: 30, _errmsg: "无效Key"}
+	JWTErrInvalidSign         = &JWTError{_errid: 31, _errmsg: "无效Sign"}
+	JWTErrDecodeSign          = &JWTError{_errid: 32, _errmsg: "解码Sign失败"}
+	JWTErrFailDoSign          = &JWTError{_errid: 33, _errmsg: "Sign失败"}
+	JWTErrIllegalTokenFormat  = &JWTError{_errid: 34, _errmsg: "Illegal Token格式"}
+	JWTErrInvalidTokenHeader  = &JWTError{_errid: 35, _errmsg: "无效Token[0]"}
+	JWTErrNotSupportAlgorithm = &JWTError{_errid: 36, _errmsg: "不支持的加密算法"}
+	JWTErrInvalidGrantType    = &JWTError{_errid: 37, _errmsg: "无效的grant type"}
+	JWTErrMakeCalim           = &JWTError{_errid: 38, _errmsg: "生成Token失败"}
+	JWTErrDecodeCalim         = &JWTError{_errid: 39, _errmsg: "解析Token失败"}
+	JWTErrInvalidCalim        = &JWTError{_errid: 40, _errmsg: "解析Token失败"}
 )
 
 func init() {
